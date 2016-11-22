@@ -35,5 +35,6 @@
         <!-- Burgers End -->
         <!-- Send Button -->
         <Button x:Name="btnSend" Grid.ColumnSpan="2" Content="SEND" HorizontalAlignment="Left" Margin="954,315,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" FontSize="28" Click="btnSend_Click"/>
+        
     </Grid>
 </Window>

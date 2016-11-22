@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Drawing.Printing;
+using System.IO;
+using System.Drawing;
 
 namespace TouchOrderPrint
 {
@@ -22,6 +15,7 @@ namespace TouchOrderPrint
     {
         List<string> order = new List<string>();
         int orderNumber = 1;
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -32,14 +26,29 @@ namespace TouchOrderPrint
             order.Insert(0, DateTime.Now.ToShortTimeString());
             order.Insert(1, "Order Number: " + orderNumber.ToString());
             order.Insert(2, "------------------");
+            
             var message = string.Join(Environment.NewLine, order);
-            MessageBox.Show(message);
             order.Clear();
             if (orderNumber == 3)
             {
                 orderNumber = 0;
             }
             orderNumber++;
+
+            PrintDocument p = new PrintDocument();
+            p.PrintPage += delegate (object sender1, PrintPageEventArgs e1)
+            {
+                e1.Graphics.DrawString(message, new Font("Times New Roman", 12), new SolidBrush(Color.Black), new RectangleF(0, 0, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
+
+            };
+            try
+            {
+                p.Print();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Exception Occured While Printing", ex);
+            }
         }
 
         // Paninis Start
@@ -139,6 +148,11 @@ namespace TouchOrderPrint
         {
             order.Add("Budget Cheese Burger");
             order.Add("------------------");
+        }
+
+        private void ordersList_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+
         }
     }
 }
