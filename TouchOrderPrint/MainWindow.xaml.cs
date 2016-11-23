@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Data;
 using System.Drawing.Printing;
-using System.IO;
 using System.Drawing;
+using System.Threading.Tasks;
 
 namespace TouchOrderPrint
 {
@@ -23,13 +22,20 @@ namespace TouchOrderPrint
 
         private void btnSend_Click(object sender, RoutedEventArgs e)
         {
-            order.Insert(0, DateTime.Now.ToShortTimeString());
-            order.Insert(1, "Order Number: " + orderNumber.ToString());
-            order.Insert(2, "------------------");
-            
+            order.Insert(0, "------------------");
+            order.Insert(1, DateTime.Now.ToShortTimeString());
+            order.Insert(2, "Order Number: " + orderNumber.ToString());
+            order.Insert(3, "------------------");
+
+            order.Add(".");
+            order.Add(".");
+            order.Add(".");
+            order.Add(".");
+
             var message = string.Join(Environment.NewLine, order);
             order.Clear();
-            if (orderNumber == 3)
+
+            if (orderNumber == 999)
             {
                 orderNumber = 0;
             }
@@ -38,11 +44,14 @@ namespace TouchOrderPrint
             PrintDocument p = new PrintDocument();
             p.PrintPage += delegate (object sender1, PrintPageEventArgs e1)
             {
-                e1.Graphics.DrawString(message, new Font("Times New Roman", 12), new SolidBrush(Color.Black), new RectangleF(0, 0, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
-
+                e1.Graphics.DrawString(message, new Font("Arial", 16), new SolidBrush(Color.Black), new RectangleF(0, 0, p.DefaultPageSettings.PrintableArea.Width, p.DefaultPageSettings.PrintableArea.Height));
             };
             try
             {
+                p.PrinterSettings.PrinterName = "Kitchen";
+                p.Print();
+
+                p.PrinterSettings.PrinterName = "Counter";
                 p.Print();
             }
             catch (Exception ex)
@@ -52,107 +61,150 @@ namespace TouchOrderPrint
         }
 
         // Paninis Start
-        private void btnBaconFetaPanini_Click(object sender, RoutedEventArgs e)
+        private async void btnBaconFetaPanini_Click(object sender, RoutedEventArgs e)
         {
+            btnBaconFetaPanini.IsEnabled = false;
             order.Add("Bacon Feta Panini");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnBaconFetaPanini.IsEnabled = true;
         }
 
-        private void btnHamPineapplePanini_Click(object sender, RoutedEventArgs e)
+        private async void btnHamPineapplePanini_Click(object sender, RoutedEventArgs e)
         {
+            btnHamPineapplePanini.IsEnabled = false;
             order.Add("Ham Pineapple Panini");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnHamPineapplePanini.IsEnabled = true;
         }
 
-        private void btnGrilledCheesePanani_Click(object sender, RoutedEventArgs e)
+        private async void btnGrilledCheesePanani_Click(object sender, RoutedEventArgs e)
         {
+            btnGrilledCheesePanani.IsEnabled = false;
             order.Add("Grilled Cheese Panini");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnGrilledCheesePanani.IsEnabled = true;
         }
 
-        private void btnAvoFetaPanini_Click(object sender, RoutedEventArgs e)
+        private async void btnAvoFetaPanini_Click(object sender, RoutedEventArgs e)
         {
+            btnAvoFetaPanini.IsEnabled = false;
             order.Add("Avo Feta Panini");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnAvoFetaPanini.IsEnabled = true;
         }
 
-        private void btnHamCheesePineapplePanini_Click(object sender, RoutedEventArgs e)
+        private async void btnHamCheesePineapplePanini_Click(object sender, RoutedEventArgs e)
         {
+            btnHamCheesePineapplePanini.IsEnabled = false;
             order.Add("Ham, Cheese, Pineapple Panini");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnHamCheesePineapplePanini.IsEnabled = true;
         }
 
-        private void btnHamCheeseTomatoPanini_Click(object sender, RoutedEventArgs e)
+        private async void btnHamCheeseTomatoPanini_Click(object sender, RoutedEventArgs e)
         {
+            btnHamCheeseTomatoPanini.IsEnabled = false;
             order.Add("Ham, Cheese, Tomato Panini");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnHamCheeseTomatoPanini.IsEnabled = true;
         }
 
         // Paninis End
         // Burgers Start
-        private void btnRibBurger_Click(object sender, RoutedEventArgs e)
+        private async void btnRibBurger_Click(object sender, RoutedEventArgs e)
         {
+            btnRibBurger.IsEnabled = false;
             order.Add("Rib Burger");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnRibBurger.IsEnabled = true;
         }
 
-        private void btnSweetChilliChickenBurger_Click(object sender, RoutedEventArgs e)
+        private async void btnSweetChilliChickenBurger_Click(object sender, RoutedEventArgs e)
         {
+            btnSweetChilliChickenBurger.IsEnabled = false;
             order.Add("Sweet Chilli Chicken Burger");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnSweetChilliChickenBurger.IsEnabled = true;
         }
 
-        private void btnChickenBurger_Click(object sender, RoutedEventArgs e)
+        private async void btnChickenBurger_Click(object sender, RoutedEventArgs e)
         {
+            btnChickenBurger.IsEnabled = false;
             order.Add("Chicken Burger");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnChickenBurger.IsEnabled = true;
         }
 
-        private void btnBaconCheeseBurger_Click(object sender, RoutedEventArgs e)
+        private async void btnBaconCheeseBurger_Click(object sender, RoutedEventArgs e)
         {
+            btnBaconCheeseBurger.IsEnabled = false;
             order.Add("Bacon and Cheese Burger");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnBaconCheeseBurger.IsEnabled = true;
         }
 
-        private void btnBaconAvoBurger_Click(object sender, RoutedEventArgs e)
+        private async void btnBaconAvoBurger_Click(object sender, RoutedEventArgs e)
         {
+            btnBaconAvoBurger.IsEnabled = false;
             order.Add("Bacon and Avo Burger");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnBaconAvoBurger.IsEnabled = true;
         }
 
-        private void btnPukBurger_Click(object sender, RoutedEventArgs e)
+        private async void btnPukBurger_Click(object sender, RoutedEventArgs e)
         {
+            btnPukBurger.IsEnabled = false;
             order.Add("PUK Burger");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnPukBurger.IsEnabled = true;
         }
 
-        private void btnHamburger_Click(object sender, RoutedEventArgs e)
+        private async void btnHamburger_Click(object sender, RoutedEventArgs e)
         {
+            btnHamburger.IsEnabled = false;
             order.Add("Hamburger");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnHamburger.IsEnabled = true;
         }
 
-        private void btnCheeseBurger_Click(object sender, RoutedEventArgs e)
+        private async void btnCheeseBurger_Click(object sender, RoutedEventArgs e)
         {
+            btnCheeseBurger.IsEnabled = false;
             order.Add("Cheese Burger");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnCheeseBurger.IsEnabled = true;
         }
 
-        private void btnBudgetBurger_Click(object sender, RoutedEventArgs e)
+        private async void btnBudgetBurger_Click(object sender, RoutedEventArgs e)
         {
+            btnBudgetBurger.IsEnabled = false;
             order.Add("Budget Burger");
             order.Add("------------------");
+            await Task.Delay(1000);
+            btnBudgetBurger.IsEnabled = true;
         }
 
-        private void btnBudgetCheeseBurger_Click(object sender, RoutedEventArgs e)
+        private async void btnBudgetCheeseBurger_Click(object sender, RoutedEventArgs e)
         {
+            btnBudgetCheeseBurger.IsEnabled = false;
             order.Add("Budget Cheese Burger");
             order.Add("------------------");
-        }
-
-        private void ordersList_SourceUpdated(object sender, DataTransferEventArgs e)
-        {
-
+            await Task.Delay(1000);
+            btnBudgetCheeseBurger.IsEnabled = true;
         }
     }
 }
