@@ -58,6 +58,8 @@
         <!-- Send and Clear Buttons -->
         <Button x:Name="btnClear" Grid.ColumnSpan="2" Content="CLEAR" HorizontalAlignment="Left" Margin="968,875,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" FontSize="28" Click="btnClear_Click"/>
         <Button x:Name="btnSend" Grid.ColumnSpan="2" Content="SEND" HorizontalAlignment="Left" Margin="1113,875,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" FontSize="28" Click="btnSend_Click"/>
-        
+        <!-- Order Box -->
+        <Label x:Name="lblOrderBox" Grid.ColumnSpan="2" Content="CURRENT ORDER" HorizontalAlignment="Left" Margin="968,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="orderBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="780" Margin="968,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" FontSize="20" FontWeight="Bold"/>
     </Grid>
 </Window>
