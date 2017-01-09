@@ -60,62 +60,6 @@ namespace TouchOrderPrint
             }
         }
 
-        // Paninis Start
-        private async void btnBaconFetaPanini_Click(object sender, RoutedEventArgs e)
-        {
-            btnBaconFetaPanini.IsEnabled = false;
-            order.Add("Bacon Feta Panini");
-            order.Add("------------------");
-            await Task.Delay(1000);
-            btnBaconFetaPanini.IsEnabled = true;
-        }
-
-        private async void btnHamPineapplePanini_Click(object sender, RoutedEventArgs e)
-        {
-            btnHamPineapplePanini.IsEnabled = false;
-            order.Add("Ham Pineapple Panini");
-            order.Add("------------------");
-            await Task.Delay(1000);
-            btnHamPineapplePanini.IsEnabled = true;
-        }
-
-        private async void btnGrilledCheesePanani_Click(object sender, RoutedEventArgs e)
-        {
-            btnGrilledCheesePanani.IsEnabled = false;
-            order.Add("Grilled Cheese Panini");
-            order.Add("------------------");
-            await Task.Delay(1000);
-            btnGrilledCheesePanani.IsEnabled = true;
-        }
-
-        private async void btnAvoFetaPanini_Click(object sender, RoutedEventArgs e)
-        {
-            btnAvoFetaPanini.IsEnabled = false;
-            order.Add("Avo Feta Panini");
-            order.Add("------------------");
-            await Task.Delay(1000);
-            btnAvoFetaPanini.IsEnabled = true;
-        }
-
-        private async void btnHamCheesePineapplePanini_Click(object sender, RoutedEventArgs e)
-        {
-            btnHamCheesePineapplePanini.IsEnabled = false;
-            order.Add("Ham, Cheese, Pineapple Panini");
-            order.Add("------------------");
-            await Task.Delay(1000);
-            btnHamCheesePineapplePanini.IsEnabled = true;
-        }
-
-        private async void btnHamCheeseTomatoPanini_Click(object sender, RoutedEventArgs e)
-        {
-            btnHamCheeseTomatoPanini.IsEnabled = false;
-            order.Add("Ham, Cheese, Tomato Panini");
-            order.Add("------------------");
-            await Task.Delay(1000);
-            btnHamCheeseTomatoPanini.IsEnabled = true;
-        }
-
-        // Paninis End
         // Burgers Start
         private async void btnRibBurger_Click(object sender, RoutedEventArgs e)
         {
