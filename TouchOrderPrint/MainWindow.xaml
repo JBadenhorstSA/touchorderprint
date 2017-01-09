@@ -15,31 +15,48 @@
         <!-- Paninis End -->
         <!-- Burgers Start -->
         <Label x:Name="lblBurgers" Grid.ColumnSpan="2" Content="BURGERS" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="btnRibBurger" Grid.ColumnSpan="2" Content="RIB&#xA;BURGER" HorizontalAlignment="Left" Margin="324,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnRibBurger_Click"/>
-        <Button x:Name="btnSweetChilliChickenBurger" Grid.ColumnSpan="2" Content="SWEET CHILLI&#xA;CHEESE CHICK&#xA;BURGER" HorizontalAlignment="Left" Margin="744,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnSweetChilliChickenBurger_Click"/>
-        <Button x:Name="btnChickenBurger" Grid.ColumnSpan="2" Content="CHICKEN&#xA;BURGER" HorizontalAlignment="Left" Margin="534,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnChickenBurger_Click"/>
-        <Button x:Name="btnBaconCheeseBurger" Grid.ColumnSpan="2" Content="BACON AND&#xA;CHEESE&#xA;BURGER" HorizontalAlignment="Left" Margin="639,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnBaconCheeseBurger_Click"/>
-        <Button x:Name="btnBaconAvoBurger" Grid.ColumnSpan="2" Content="BACON AND&#xA;AVO&#xA;BURGER" HorizontalAlignment="Left" Margin="849,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnBaconAvoBurger_Click"/>
-        <Button x:Name="btnPukBurger" Grid.ColumnSpan="2" Content="PUK&#xA;BURGER" HorizontalAlignment="Left" Margin="954,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnPukBurger_Click"/>
-        <Button x:Name="btnHamburger" Grid.ColumnSpan="2" Content="HAMBURGER" HorizontalAlignment="Left" Margin="219,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnHamburger_Click"/>
-        <Button x:Name="btnCheeseBurger" Grid.ColumnSpan="2" Content="CHEESE&#xA;BURGER" HorizontalAlignment="Left" Margin="429,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnCheeseBurger_Click"/>
-        <Button x:Name="btnBudgetBurger" Grid.ColumnSpan="2" Content="BUDGET&#xA;BURGER" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnBudgetBurger_Click"/>
-        <Button x:Name="btnBudgetCheeseBurger" Grid.ColumnSpan="2" Content="BUDGET&#xA;CHEESE&#xa;BURGER" HorizontalAlignment="Left" Margin="114,49,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" Click="btnBudgetCheeseBurger_Click"/>
+        <Button x:Name="btnRibBurger" Grid.ColumnSpan="2" Content="RIB&#xA;BURGER" HorizontalAlignment="Left" Margin="564,49,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnRibBurger_Click" FontSize="16"/>
+        <Button x:Name="btnSweetChilliChickenBurger" Grid.ColumnSpan="2" Content="SWEET CHILLI&#xA;CHEESE CHICK&#xA;BURGER" HorizontalAlignment="Left" Margin="380,174,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnSweetChilliChickenBurger_Click" FontSize="16"/>
+        <Button x:Name="btnChickenBurger" Grid.ColumnSpan="2" Content="CHICKEN&#xA;BURGER" HorizontalAlignment="Left" Margin="10,174,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnChickenBurger_Click" FontSize="16"/>
+        <Button x:Name="btnBaconCheeseBurger" Grid.ColumnSpan="2" Content="BACON AND&#xA;CHEESE&#xA;BURGER" HorizontalAlignment="Left" Margin="195,174,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnBaconCheeseBurger_Click" FontSize="16"/>
+        <Button x:Name="btnBaconAvoBurger" Grid.ColumnSpan="2" Content="BACON AND&#xA;AVO&#xA;BURGER" HorizontalAlignment="Left" Margin="565,174,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnBaconAvoBurger_Click" FontSize="16"/>
+        <Button x:Name="btnPukBurger" Grid.ColumnSpan="2" Content="PUK&#xA;BURGER" HorizontalAlignment="Left" Margin="750,174,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnPukBurger_Click" FontSize="16"/>
+        <Button x:Name="btnHamburger" Grid.ColumnSpan="2" Content="HAMBURGER" HorizontalAlignment="Left" Margin="379,49,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnHamburger_Click" FontSize="16"/>
+        <Button x:Name="btnCheeseBurger" Grid.ColumnSpan="2" Content="CHEESE&#xA;BURGER" HorizontalAlignment="Left" Margin="749,49,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnCheeseBurger_Click" FontSize="16"/>
+        <Button x:Name="btnBudgetBurger" Grid.ColumnSpan="2" Content="BUDGET&#xA;BURGER" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnBudgetBurger_Click" FontSize="16"/>
+        <Button x:Name="btnBudgetCheeseBurger" Grid.ColumnSpan="2" Content="BUDGET&#xA;CHEESE&#xa;BURGER" HorizontalAlignment="Left" Margin="194,49,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" Click="btnBudgetCheeseBurger_Click" FontSize="16"/>
         <!-- Burgers End -->
         <!-- Pitas Start -->
-        <Label x:Name="lblPitas" Grid.ColumnSpan="2" Content="PITAS" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="btnBreakfastPita" Grid.ColumnSpan="2" Content="BREAKFAST&#xA;PITA" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold"/>
-        <Button x:Name="btnRibCheesePita" Grid.ColumnSpan="2" Content="RIB &amp; CHEESE&#xA;PITA" HorizontalAlignment="Left" Margin="114,151,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold"/>
-        <Button x:Name="btnChickenPita" Grid.ColumnSpan="2" Content="CHICKEN&#xA;PITA" HorizontalAlignment="Left" Margin="219,151,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold"/>
-        <Button x:Name="btnMeatyHawaiianPita" Grid.ColumnSpan="2" Content="MEATY&#xA;HAWAIIAN PITA" HorizontalAlignment="Left" Margin="324,151,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold"/>
+        <Label x:Name="lblPitas" Grid.ColumnSpan="2" Content="PITAS" HorizontalAlignment="Left" Margin="10,272,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnBreakfastPita" Grid.ColumnSpan="2" Content="BREAKFAST&#xA;PITA" HorizontalAlignment="Left" Margin="10,311,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnBreakfastPita_Click"/>
+        <Button x:Name="btnRibCheesePita" Grid.ColumnSpan="2" Content="RIB &amp; CHEESE&#xA;PITA" HorizontalAlignment="Left" Margin="194,311,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnRibCheesePita_Click"/>
+        <Button x:Name="btnChickenPita" Grid.ColumnSpan="2" Content="CHICKEN&#xA;PITA" HorizontalAlignment="Left" Margin="379,311,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnChickenPita_Click"/>
+        <Button x:Name="btnMeatyHawaiianPita" Grid.ColumnSpan="2" Content="MEATY&#xA;HAWAIIAN&#xA;PITA" HorizontalAlignment="Left" Margin="564,311,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnMeatyHawaiianPita_Click"/>
         <!-- Pitas End -->
         <!-- Wraps Start -->
-        <Label x:Name="lblWraps" Grid.ColumnSpan="2" Content="WRAPS" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="btnChickenWrap" Grid.ColumnSpan="2" Content="CHICKEN&#xA;WRAP" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold"/>
-        <Button x:Name="btnHawaiianWrap" Grid.ColumnSpan="2" Content="HAWAIIAN&#xA;WRAP" HorizontalAlignment="Left" Margin="114,253,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold"/>
+        <Label x:Name="lblWraps" Grid.ColumnSpan="2" Content="WRAPS" HorizontalAlignment="Left" Margin="10,414,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnChickenWrap" Grid.ColumnSpan="2" Content="CHICKEN&#xA;WRAP" HorizontalAlignment="Left" Margin="10,453,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnChickenWrap_Click"/>
+        <Button x:Name="btnHawaiianWrap" Grid.ColumnSpan="2" Content="HAWAIIAN&#xA;WRAP" HorizontalAlignment="Left" Margin="194,453,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnHawaiianWrap_Click"/>
         <!-- Wraps End -->
+        <!-- Pananins Start-->
+        <Label x:Name="lblPaninis" Grid.ColumnSpan="2" Content="PANINIS" HorizontalAlignment="Left" Margin="10,558,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnBaconFetaAvoPanini" Grid.ColumnSpan="2" Content="BACON, FETA&#xA;&amp; AVO&#xA;PANINI" HorizontalAlignment="Left" Margin="10,597,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnBaconFetaAvoPanini_Click"/>
+        <Button x:Name="btnCheeseHamPineapplePanini" Grid.ColumnSpan="2" Content="CHEESE, HAM &#xA;&amp; PINEAPPLE&#xA;PANINI" HorizontalAlignment="Left" Margin="194,597,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnCheeseHamPineapplePanini_Click"/>
+        <Button x:Name="btnGrilledCheesePanini" Grid.ColumnSpan="2" Content="GRILLED&#xA;CHEESE&#xA;PANINI" HorizontalAlignment="Left" Margin="379,597,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnGrilledCheesePanini_Click"/>
+        <Button x:Name="btnGrilledAvoFetaPanini" Grid.ColumnSpan="2" Content="GRILLED AVO&#xA;&amp; FETA&#xA;PANINI" HorizontalAlignment="Left" Margin="564,597,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnGrilledAvoFetaPanini_Click"/>
+        <!-- Paninis End -->
+        <!-- Extras Start -->
+        <Label x:Name="lblExtras" Grid.ColumnSpan="2" Content="EXTRAS" HorizontalAlignment="Left" Margin="10,700,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="btnExtraTomato" Grid.ColumnSpan="2" Content="EXTRA&#xA;TOMATO" HorizontalAlignment="Left" Margin="10,739,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnExtraTomato_Click"/>
+        <Button x:Name="btnExtraFriedOnions" Grid.ColumnSpan="2" Content="EXTRA&#xA;FRIED ONIONS" HorizontalAlignment="Left" Margin="195,739,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnExtraFriedOnions_Click"/>
+        <Button x:Name="btnExtraEgg" Grid.ColumnSpan="2" Content="EXTRA&#xA;EGG" HorizontalAlignment="Left" Margin="380,739,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnExtraEgg_Click"/>
+        <Button x:Name="btnExtraCheese" Grid.ColumnSpan="2" Content="EXTRA&#xA;CHEESE" HorizontalAlignment="Left" Margin="565,739,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnExtraCheese_Click"/>
+        <Button x:Name="btnExtraAvo" Grid.ColumnSpan="2" Content="EXTRA&#xA;AVO" HorizontalAlignment="Left" Margin="750,739,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnExtraAvo_Click"/>
+        <Button x:Name="btnExtraFeta" Grid.ColumnSpan="2" Content="EXTRA&#xA;FETA" HorizontalAlignment="Left" Margin="11,859,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnExtraFeta_Click"/>
+        <Button x:Name="btnExtraBacon" Grid.ColumnSpan="2" Content="EXTRA&#xA;BACON" HorizontalAlignment="Left" Margin="196,859,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnExtraBacon_Click"/>
+        <!-- Extras End -->
         <!-- Send Button -->
-        <Button x:Name="btnSend" Grid.ColumnSpan="2" Content="SEND" HorizontalAlignment="Left" Margin="954,315,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" FontSize="28" Click="btnSend_Click"/>
-        
+        <Button x:Name="btnSend" Grid.ColumnSpan="2" Content="SEND" HorizontalAlignment="Left" Margin="1113,875,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" FontSize="28" Click="btnSend_Click"/>
+
     </Grid>
 </Window>
