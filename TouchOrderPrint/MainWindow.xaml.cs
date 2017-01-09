@@ -20,6 +20,11 @@ namespace TouchOrderPrint
             InitializeComponent();
         }
 
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            order.Clear();
+        }
+
         private void btnSend_Click(object sender, RoutedEventArgs e)
         {
             order.Insert(0, "------------------");
@@ -40,7 +45,8 @@ namespace TouchOrderPrint
                 orderNumber = 0;
             }
             orderNumber++;
-
+            
+            
             PrintDocument p = new PrintDocument();
             p.PrintPage += delegate (object sender1, PrintPageEventArgs e1)
             {

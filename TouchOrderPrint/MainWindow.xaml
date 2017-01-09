@@ -55,8 +55,9 @@
         <Button x:Name="btnExtraFeta" Grid.ColumnSpan="2" Content="EXTRA&#xA;FETA" HorizontalAlignment="Left" Margin="11,859,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnExtraFeta_Click"/>
         <Button x:Name="btnExtraBacon" Grid.ColumnSpan="2" Content="EXTRA&#xA;BACON" HorizontalAlignment="Left" Margin="196,859,0,0" VerticalAlignment="Top" Width="120" Height="90" FontWeight="Bold" FontSize="16" Click="btnExtraBacon_Click"/>
         <!-- Extras End -->
-        <!-- Send Button -->
+        <!-- Send and Clear Buttons -->
+        <Button x:Name="btnClear" Grid.ColumnSpan="2" Content="CLEAR" HorizontalAlignment="Left" Margin="968,875,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" FontSize="28" Click="btnClear_Click"/>
         <Button x:Name="btnSend" Grid.ColumnSpan="2" Content="SEND" HorizontalAlignment="Left" Margin="1113,875,0,0" VerticalAlignment="Top" Width="100" Height="60" FontWeight="Bold" FontSize="28" Click="btnSend_Click"/>
-
+        
     </Grid>
 </Window>
