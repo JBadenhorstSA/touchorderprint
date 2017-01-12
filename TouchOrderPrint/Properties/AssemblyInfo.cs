@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("TouchOrderPrint")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Terry Ferreira")]
 [assembly: AssemblyProduct("TouchOrderPrint")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright © 2017 - Terry Ferreira")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

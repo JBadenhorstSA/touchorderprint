@@ -33,11 +33,6 @@ namespace TouchOrderPrint
             order.Insert(2, "Order Number: " + orderNumber.ToString());
             order.Insert(3, "------------------");
 
-            order.Add(".");
-            order.Add(".");
-            order.Add(".");
-            order.Add(".");
-
             var message = string.Join(Environment.NewLine, order);
             order.Clear();
 
@@ -54,8 +49,8 @@ namespace TouchOrderPrint
             };
             try
             {
-                p.PrinterSettings.PrinterName = "Kitchen";
-                p.Print();
+                //p.PrinterSettings.PrinterName = "Kitchen";
+                //p.Print();
 
                 p.PrinterSettings.PrinterName = "Counter";
                 p.Print();
@@ -345,6 +340,26 @@ namespace TouchOrderPrint
             order.Add("------------------");
             await Task.Delay(1000);
             btnExtraBacon.IsEnabled = true;
+        }
+
+        private async void btnNoGarnish_Click(object sender, RoutedEventArgs e)
+        {
+            orderBox.AppendText("No Garnish" + Environment.NewLine + "-----------------------------" + Environment.NewLine);
+            btnNoGarnish.IsEnabled = false;
+            order.Add("No Garnish");
+            order.Add("------------------");
+            await Task.Delay(1000);
+            btnNoGarnish.IsEnabled = true;
+        }
+
+        private async void btnNoSauce_Click(object sender, RoutedEventArgs e)
+        {
+            orderBox.AppendText("No Sauce" + Environment.NewLine + "-----------------------------" + Environment.NewLine);
+            btnNoSauce.IsEnabled = false;
+            order.Add("No Sauce");
+            order.Add("------------------");
+            await Task.Delay(1000);
+            btnNoSauce.IsEnabled = true;
         }
         // Extras End
     }
